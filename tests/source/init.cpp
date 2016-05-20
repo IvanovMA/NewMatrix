@@ -136,17 +136,7 @@ SCENARIO("Matrix *_l", "[mult]") {
 	REQUIRE(result == expected);
 }
 
-/*SCENARIO("Matrix *_d", "[mult]") { //Они одинаковы, но он этого не видит:с
-	Matrix<double> matrix(2, 2);
-	matrix.set_matrix("1double.txt");
-	Matrix<double> matrixg(2, 2);
-	matrixg.set_matrix("2double.txt");
-	Matrix<double> expected(2, 2);
-	expected.set_matrix("1_2double.txt");
-	Matrix<double> result = matrix * matrixg;
-	REQUIRE(result == expected);
-}
-*/
+
 SCENARIO("Iscl_martrix *","[mult]"){
 	int O=0;
 	Matrix<int> matrix(2, 2);
